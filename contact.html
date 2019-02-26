@@ -4,39 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="stylecontacts.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
 </head>
 
 <body>
+    <nav class="topnav-right">
+        <a href="index1.html" id="me">Brendan Bierman</a>
+        <a href="index1.html" target="_self">About Me |</a>
+        <a href="contact.html" target="_self">Contact |</a>
+        <a href="portfolio.html" target="_self">Portfolio</a>
+    </nav>
+
     <div id="Contact" class="tabcontent">
         <h3>Enter in your information</h3>
-        <!-- <a href="C:\Users\bbier\HW-Wireframe\Basic-Portfolio\stylecontacts.css">Contact</a> -->
+        <hr>
+        <a href="style.css"></a>
+
+        <form action="my-handling-form-page" method="post">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+        </form>
     </div>
-
-         <!--Tab links-->
-    <div class="tab">
-        <button class="tablinks" onclick="openPage(event,'About Me')">About Me</button>
-            <a href="C:\Users\bbier\HW-Wireframe\Basic-Portfolio\index1.html" target="_self">About Me</a>
     
-            <button class="tablinks" onclick="openPage(event,'Contact')">Contact</button>
-            <a href="C:\Users\bbier\HW-Wireframe\Basic-Portfolio\contacts.html" target="_self">Contact</a>
-    
-            <button class="tablinks" onclick="openPage(event,'Portfolio')">Portfolio</button>
-            <a href="C:\Users\bbier\HW-Wireframe\Basic-Portfolio\portfolio.html" target="_self">Portfolio</a>
-    </div>
-
-        <div class="container" class="tabcontent"></div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
-
-        <label for="email">Email</label>
-        <input type="text" id="Email" name="Email" placeholder="Your email..">
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-        <input type="submit" value="Submit">
-    
-    <div class="footer">        
-            <footer>footer</footer>
-    </div>
+    <footer class=footer>
+    </footer>
 </body>
